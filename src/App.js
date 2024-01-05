@@ -1,4 +1,13 @@
-export default function App() {}
+export default function App() {
+  return (
+    <>
+      <Logo />
+      <Form />
+      <PackingList />
+      <Stats />
+    </>
+  );
+}
 
 function Logo() {
   return <h1>🏜️ Far Away 🌎</h1>;
@@ -12,6 +21,14 @@ function Form() {
   );
 }
 
-function PackingList() {}
+function PackingList() {
+  return <div className="list">LIST</div>;
+}
 
-function Stats() {}
+function Stats() {
+  return (
+    <footer>
+      <em>🧰 You have X items on tour list, and you already packed X (X%)</em>
+    </footer>
+  );
+}
